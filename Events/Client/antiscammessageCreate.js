@@ -42,7 +42,7 @@ module.exports = {
                     logChannel.send({
                         embeds: [
                             new EmbedBuilder()
-                                .setColor(mainColor)
+                                .setColor("DD0000")
                                 .setDescription(`<@${message.author.id}> has sent a harmful link.\n\`\`\`${message.content}\`\`\``)
                                 .setFooter({ text: `User ID: ${message.author.id}` })
                                 .setTimestamp()
