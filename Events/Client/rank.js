@@ -35,7 +35,7 @@ module.exports = {
             ++level;
             xp = 0;
 
-            message.reply(`🎉 <@${userId}>, you are now level ${level}!`);
+            message.reply({content: `🎉 <@${userId}>, you are now level ${level}!`, ephemeral: true});
 
             await User.updateOne(
                {

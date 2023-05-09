@@ -37,7 +37,7 @@ module.exports = {
          .setLevel(user.level)
          .setRank(0, 0, false)
          .setRequiredXP(user.level * 100)
-         .setStatus(member.presence.status)
+         .setStatus('online')
          .setProgressBar('#FFFFFF', 'COLOR')
          .setUsername(member.user.username)
          .setDiscriminator(member.user.discriminator);
